@@ -3,8 +3,10 @@ import GlobeImage from "./../assets/globe.png"
 function Header() {
     return (
         <>
-            <img src={GlobeImage} alt="globe image" />
-            <h1>Header here</h1>
+            <div className="header-container">
+                <img src={GlobeImage} alt="globe image" />
+                <h1>MyTravelJournal</h1>
+            </div>
         </>
     )
 }
