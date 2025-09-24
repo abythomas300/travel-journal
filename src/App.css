@@ -23,3 +23,107 @@ body {
     font-style: italic;
     color: white;
 }
+
+/*Entry Element*/
+/* Main container for the entry card */
+.entry-container {
+    display: flex; /* Use flexbox for horizontal layout on desktop */
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+    gap: 2rem;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Styling for the image container */
+  .entry-image {
+    height: 100%;
+  }
+  
+  .entry-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Styling for the content section */
+  .entry-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    flex-grow: 1; /* Allows content to take up remaining space */
+  }
+  
+  /* Destination metadata (location and Google Maps link) */
+  .destination-metadata {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2b283a;
+  }
+  
+  .destination-metadata::before {
+    content: "📍"; /* Pin icon */
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .destination-metadata a {
+    margin-left: 10px;
+    color: #918e9b;
+  }
+  
+  /* Destination name styling (e.g., Mount Fuji) */
+  .destination-name h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+    color: #2b283a;
+  }
+  
+  /* Date styling */
+  .destination-date {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2b283a;
+  }
+
+  .destination-date p{
+    padding: 0px;
+  }
+  
+  /* Description styling */
+  .destination-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #2b283a;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .entry-container {
+      flex-direction: column; /* Stacks the image and content vertically */
+      align-items: center;
+      text-align: center;
+    }
+    
+    .entry-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .destination-metadata {
+      justify-content: center;
+    }
+  }
+  

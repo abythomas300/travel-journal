@@ -6,6 +6,11 @@ function App() {
         <>
             <Header />
             <Entry />
+            <Entry />
+            <Entry />
+            <Entry />
+            <Entry />
+            <Entry />
         </>
     )
 }
