@@ -1,7 +1,8 @@
 function Entry(props) {
 
     const {country, LocationGoogleMapLink, locationName, date, description, img} = props;
-
+    console.log(img)
+    
     return(
         <div className="entry-container">
             <div className="entry-image">
